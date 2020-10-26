@@ -9,7 +9,7 @@ bot.help((ctx) => ctx.reply('use "/howretard [Something]" to check how retard is
 bot.command('source', (ctx) => ctx.reply('Source Code: https://github.com/ender1324/HowRetardBot'))
 bot.hears(/howretard (.+)/, ({ match, reply }) => {
     const randomnumber = Math.floor(Math.random() * 100) + "%";
-   reply(match[1] + " is " + randomnumber + " retarded").catch((err) => { 
+   reply(match[1] + " is " + randomnumber + " trans").catch((err) => { 
     console.log(err)
     const trimerr = err.toString().trim()
     reply(trimerr)
