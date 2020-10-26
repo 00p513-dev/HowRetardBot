@@ -5,9 +5,8 @@ bot.catch((err, ctx) => {
     console.log(`Encountered an error for ${ctx.updateType}`, err)
   })
 bot.start((ctx) => ctx.reply("I'm alive, use /help to see the many of my command"))
-bot.help((ctx) => ctx.reply('use "/howretard [Something]" to check how retard is the something'))
-bot.command('source', (ctx) => ctx.reply('Source Code: https://github.com/ender1324/HowRetardBot'))
-bot.hears(/howretard (.+)/, ({ match, reply }) => {
+bot.help((ctx) => ctx.reply('use "/howtrans [Something]" to check how trans is the something'))
+bot.hears(/howtrans (.+)/, ({ match, reply }) => {
     const randomnumber = Math.floor(Math.random() * 100) + "%";
    reply(match[1] + " is " + randomnumber + " trans").catch((err) => { 
     console.log(err)
